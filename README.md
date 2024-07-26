@@ -9,3 +9,9 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * JavaScript
 * Component state, event handlers
 * A more complex state, debuggging React apps
+## [Part 2 - Communicating with server ](part2/)  
+* Rendering a collection, modules
+* Forms
+* Getting data from server
+* Altering data in server
+* Adding styles to React app
