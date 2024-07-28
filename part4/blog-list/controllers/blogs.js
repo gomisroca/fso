@@ -84,6 +84,9 @@ blogsRouter.delete('/:id', middleware.userExtractor, async (request, response) =
             message: 'User not authorized'
         })
     }
+    
+    user.blogs = user.blogs.filter(bl => bl._id.toString() !== blog._id.toString())
+    await user.save()
 
     await Blog.deleteOne({_id: blog._id})
     response.status(204).json()
