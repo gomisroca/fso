@@ -20,3 +20,9 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * Deploying app to internet
 * Saving data to MongoDB
 * Validation and ESLint
+## [Part 4 - Testing Express servers, user administration ](part4/)  
+* Structure of backend application, introduction to testing
+* Testing the backend
+* User administration
+* Token authentication
+
