@@ -38,7 +38,7 @@ describe('<Togglable />', () => {
     const button = screen.getByText('show...')
     await user.click(button)
 
-    const closeButton = screen.getByText('Cancel')
+    const closeButton = screen.getByText('Close')
     await user.click(closeButton)
 
     const div = container.querySelector('.togglableContent')
