@@ -30,5 +30,3 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * props.children and proptypes
 * Testing React apps
 * End to end testing: Playwright
-* End to end testing: Cypress
-
