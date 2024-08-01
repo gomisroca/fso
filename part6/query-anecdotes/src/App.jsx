@@ -10,8 +10,8 @@ const App = () => {
   const updateAnecdoteMutation = useMutation({ 
     mutationFn: updateAnecdote,
     onSuccess: (updateAnecdote) => {
-      const notes = queryClient.getQueryData(['anecdotes'])
-      queryClient.setQueryData(['anecdotes'], notes.map(anecdote => anecdote.id === updateAnecdote.id ? updateAnecdote : anecdote))
+      const anecdotes = queryClient.getQueryData(['anecdotes'])
+      queryClient.setQueryData(['anecdotes'], anecdotes.map(anecdote => anecdote.id === updateAnecdote.id ? updateAnecdote : anecdote))
     },
   })
   
