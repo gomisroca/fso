@@ -30,3 +30,8 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * props.children and proptypes
 * Testing React apps
 * End to end testing: Playwright
+## [Part 6 - Advanced state management ](part6/)  
+* Flux-architecture and Redux
+* Many reducers
+* Communicating with server in a Redux application
+* React Query, useReducer and the context
