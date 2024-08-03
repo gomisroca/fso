@@ -11,12 +11,12 @@ function Navbar() {
   });
 
   return (
-    <div className="flex flex-row bg-neutral-600 p-4 justify-between items-center text-neutral-100 font-semibold ">
-      <div className="flex gap-x-4  items-center">
-        <Link to="/" className="hover:text-neutral-300 transition-colors duration-200">
+    <div className="flex flex-row items-center justify-between bg-neutral-600 p-4 font-semibold text-neutral-100 ">
+      <div className="flex items-center  gap-x-4">
+        <Link to="/" className="transition-colors duration-200 hover:text-neutral-300">
           Blogs
         </Link>
-        <Link to="/users" className="hover:text-neutral-300 transition-colors duration-200">
+        <Link to="/users" className="transition-colors duration-200 hover:text-neutral-300">
           Users
         </Link>
       </div>
@@ -24,10 +24,10 @@ function Navbar() {
         {user === null ? (
           <LoginForm />
         ) : (
-          <div className="flex gap-x-4 items-center">
+          <div className="flex items-center gap-x-4">
             <span>{user.name}</span>
             <button
-              className="rounded-md bg-neutral-200 hover:bg-neutral-300 transition-colors duration-200 px-2 py-1 text-neutral-800 font-semibold"
+              className="rounded-md bg-neutral-200 px-2 py-1 font-semibold text-neutral-800 transition-colors duration-200 hover:bg-neutral-300"
               onClick={() => dispatch(logoutUser())}
               data-testid="logoutButton">
               Logout

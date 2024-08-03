@@ -21,14 +21,14 @@ const LoginForm = () => {
 
   return (
     <form className="flex flex-row gap-x-2" onSubmit={handleLogin} data-testid="loginForm">
-      <div className="uppercase flex gap-x-2 items-center">
+      <div className="flex items-center gap-x-2 uppercase">
         username
-        <input className="border border-neutral-200 px-2 py-1 rounded-md" data-testid="username" name="username" />
+        <input className="rounded-md border border-neutral-200 px-2 py-1" data-testid="username" name="username" />
       </div>
-      <div className="uppercase flex gap-x-2 items-center">
+      <div className="flex items-center gap-x-2 uppercase">
         password
         <input
-          className="border border-neutral-200 px-2 py-1 rounded-md"
+          className="rounded-md border border-neutral-200 px-2 py-1"
           data-testid="password"
           type="password"
           name="password"
@@ -36,7 +36,7 @@ const LoginForm = () => {
       </div>
       <button
         type="submit"
-        className="rounded-md bg-neutral-200 hover:bg-neutral-300 transition-colors duration-200 px-2 py-1 text-neutral-800 font-semibold">
+        className="rounded-md bg-neutral-200 px-2 py-1 font-semibold text-neutral-800 transition-colors duration-200 hover:bg-neutral-300">
         Log In
       </button>
     </form>

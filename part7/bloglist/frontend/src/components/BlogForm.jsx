@@ -21,23 +21,23 @@ const BlogForm = () => {
   return (
     <>
       <form onSubmit={addBlog} className="flex flex-row gap-x-2">
-        <div className="uppercase flex gap-x-2 items-center">
+        <div className="flex items-center gap-x-2 uppercase">
           Title:
-          <input className="border border-neutral-600 px-2 py-1 rounded-md" data-testid="titleInput" name="title" />
+          <input className="rounded-md border border-neutral-600 px-2 py-1" data-testid="titleInput" name="title" />
         </div>
-        <div className="uppercase flex gap-x-2 items-center">
+        <div className="flex items-center gap-x-2 uppercase">
           Author:
-          <input className="border border-neutral-600 px-2 py-1 rounded-md" name="author" data-testid="authorInput" />
+          <input className="rounded-md border border-neutral-600 px-2 py-1" name="author" data-testid="authorInput" />
         </div>
-        <div className="uppercase flex gap-x-2 items-center">
+        <div className="flex items-center gap-x-2 uppercase">
           Url:
-          <input className="border border-neutral-600 px-2 py-1 rounded-md" data-testid="urlInput" name="url" />
+          <input className="rounded-md border border-neutral-600 px-2 py-1" data-testid="urlInput" name="url" />
         </div>
-        <div className="uppercase flex gap-x-2 items-center">
+        <div className="flex items-center gap-x-2 uppercase">
           <button
             data-testid="addBlogButton"
             type="submit"
-            className="rounded-md bg-green-800 hover:bg-green-700 transition-colors duration-200 px-2 py-1 text-neutral-200 font-semibold w-fit">
+            className="w-fit rounded-md bg-green-800 px-2 py-1 font-semibold text-neutral-200 transition-colors duration-200 hover:bg-green-700">
             Add Blog
           </button>
         </div>

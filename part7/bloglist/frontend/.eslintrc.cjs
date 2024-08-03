@@ -11,32 +11,21 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:vitest-globals/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh', 'prettier'],
+  plugins: ['react-refresh', 'prettier', 'tailwindcss'],
   rules: {
     "prettier/prettier": "error",
-    "indent": [
-        "error",
-        2  
-    ],
-    "quotes": [
-        "error",
-        "single"
-    ],
     "eqeqeq": "error",
-    "no-trailing-spaces": "error",
-    "object-curly-spacing": [
-        "error", "always"
-    ],
-    "arrow-spacing": [
-        "error", { "before": true, "after": true }
-    ],
-    "no-console": 0,
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "no-console": "warn",
+    "no-undef": "off",
+    "no-unused-vars": "off",
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": 0,
-    "no-unused-vars": 0    
+    "react/jsx-uses-react": "off", 
   },
 }

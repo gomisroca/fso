@@ -23,14 +23,14 @@ const CommentForm = () => {
     <>
       <form onSubmit={addBlog} className="flex flex-row gap-x-2">
         <input
-          className="w-1/3 border-2 border-neutral-600 px-2 py-1 rounded-md"
+          className="w-1/3 rounded-md border-2 border-neutral-600 px-2 py-1"
           data-testid="contentInput"
           name="content"
         />
         <button
           data-testid="addBlogButton"
           type="submit"
-          className="rounded-md bg-green-800 hover:bg-green-700 transition-colors duration-200 px-2 py-1 text-neutral-200 font-semibold w-fit">
+          className="w-fit rounded-md bg-green-800 px-2 py-1 font-semibold text-neutral-200 transition-colors duration-200 hover:bg-green-700">
           Add Comment
         </button>
       </form>

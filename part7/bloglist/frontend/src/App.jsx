@@ -26,7 +26,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Notification />
-      <div className="p-4 flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 p-4">
         <span className="text-2xl font-bold uppercase">Blogs</span>
         <hr className="border-neutral-600" />
         <Routes>

@@ -6,7 +6,7 @@ const Notification = () => {
   if (notification === '') {
     return null;
   }
-  return <div className="w-full fixed bottom-0 p-4 bg-neutral-600 text-neutral-100 font-semibold">{notification}</div>;
+  return <div className="fixed bottom-0 w-full bg-neutral-600 p-4 font-semibold text-neutral-100">{notification}</div>;
 };
 
 export default Notification;

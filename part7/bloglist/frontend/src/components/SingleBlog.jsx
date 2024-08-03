@@ -38,20 +38,20 @@ const SingleBlog = () => {
   }
 
   return (
-    <div data-testid="blog" className="p-2 flex flex-col gap-y-2">
+    <div data-testid="blog" className="flex flex-col gap-y-2 p-2">
       <div className="text-xl">
         <span className="font-semibold">{blog.title}</span> by <span className="font-semibold">{blog.author}</span>
       </div>
-      <div className="flex flex-row gap-x-2 items-center">
+      <div className="flex flex-row items-center gap-x-2">
         <Link
           to={blog.url}
-          className="text-sm bg-neutral-200 hover:bg-neutral-300 transition-colors duration-200 w-fit p-2 rounded-md">
+          className="w-fit rounded-md bg-neutral-200 p-2 text-sm transition-colors duration-200 hover:bg-neutral-300">
           🌐 {blog.url}
         </Link>
         <button
           data-testid="likeButton"
           onClick={() => handleLike()}
-          className="w-20 justify-evenly flex items-center rounded-md bg-neutral-200 hover:bg-neutral-300 transition-colors duration-200 p-2 text-neutral-800 font-semibold">
+          className="flex w-20 items-center justify-evenly rounded-md bg-neutral-200 p-2 font-semibold text-neutral-800 transition-colors duration-200 hover:bg-neutral-300">
           <span>👍</span>
           <span>{blog.likes}</span>
         </button>
@@ -59,7 +59,7 @@ const SingleBlog = () => {
           <button
             data-testid="deleteButton"
             onClick={() => deleteBlog()}
-            className="w-fit rounded-md bg-red-600 hover:bg-red-700 transition-colors duration-200 p-2 text-neutral-200 font-semibold">
+            className="w-fit rounded-md bg-red-600 p-2 font-semibold text-neutral-200 transition-colors duration-200 hover:bg-red-700">
             Delete Blog
           </button>
         )}
@@ -73,7 +73,7 @@ const SingleBlog = () => {
             {comments.map((comment) => (
               <div
                 key={comment.id}
-                className="flex flex-col gap-y-2 items-start p-2 border rounded-md border-neutral-600 w-1/3">
+                className="flex w-1/3 flex-col items-start gap-y-2 rounded-md border border-neutral-600 p-2">
                 <div className="text-sm">{comment.user.name}</div>
                 <div className="text-lg">{comment.content}</div>
               </div>

@@ -17,12 +17,12 @@ function SingleUser() {
       <span className="text-xl font-bold">{user.name}</span>
       <div>
         <span className="text-lg ">Blogs Created</span>
-        <ul className="list-none flex flex-col gap-y-2 ml-2">
+        <ul className="ml-2 flex list-none flex-col gap-y-2">
           {user.blogs.map((blog) => (
             <li key={blog.id}>
               <Link
                 to={`/blogs/${blog.id}`}
-                className="px-4 py-1 bg-neutral-200 hover:bg-neutral-300 rounded-md w-52 block">
+                className="block w-52 rounded-md bg-neutral-200 px-4 py-1 hover:bg-neutral-300">
                 {blog.title}
               </Link>
             </li>

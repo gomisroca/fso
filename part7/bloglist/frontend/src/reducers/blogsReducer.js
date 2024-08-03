@@ -38,7 +38,6 @@ export const createBlog = (blog) => {
 
 export const deleteBlog = (blog) => {
   return async (dispatch) => {
-    console.log(blog.id);
     blogService.remove(blog.id);
     dispatch(removeBlog(blog.id));
   };
@@ -47,7 +46,6 @@ export const deleteBlog = (blog) => {
 export const likeBlog = (blog) => {
   return async (dispatch) => {
     const updatedBlog = await blogService.updateLikes(blog);
-    console.log(updatedBlog);
     dispatch(updateBlogLikes(updatedBlog));
   };
 };
