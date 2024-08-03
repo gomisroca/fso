@@ -35,3 +35,10 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * Many reducers
 * Communicating with server in a Redux application
 * React Query, useReducer and the context
+## [Part 7 - React router, custom hooks, styling app with CSS and webpack ](part7/)  
+* React Router
+* Custom hooks
+* More about styles
+* Webpack
+* Class components, Miscellaneous
+* Exercises: extending the bloglist

@@ -1,0 +1,11 @@
+GET http://localhost:3003/api/comments/66a61c8642ff997135ba8666
+
+###
+POST http://localhost:3003/api/comments/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY2YTYwYjY0NTUwNjcwYTJjNmZkNzUzMSIsImlhdCI6MTcyMjY4ODg3MiwiZXhwIjoxNzIyNjkyNDcyfQ.kZy-rJUhUNzdrWq1C1sKQzkvlC53c_Q0FTsIJ3bdrNE
+
+{
+    "content": "Some text with a timestamp??",
+    "blogId": "66a61c8642ff997135ba8666"
+}
