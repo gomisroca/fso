@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { ALL_AUTHORS, ALL_BOOKS } from '../queries'
-import { CREATE_BOOK } from '../mutations'
+import { ALL_BOOKS } from '../graphql/queries/allBooks.js'
+import { ALL_AUTHORS } from '../graphql/queries/allAuthors.js'
+import { CREATE_BOOK } from '../graphql/mutations/createBook.js'
 import { useMutation } from '@apollo/client'
 
 const NewBook = ({show, setError}) => {

@@ -1,5 +1,6 @@
 import { useQuery } from '@apollo/client'
-import { ALL_BOOKS, USER_INFO } from '../queries'
+import { ALL_BOOKS } from '../graphql/queries/allBooks.js'
+import { USER_INFO } from '../graphql/queries/userInfo.js'
 import { useEffect, useState } from 'react'
 
 function RecommendedList({ user }) {

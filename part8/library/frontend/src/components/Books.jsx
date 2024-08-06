@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { ALL_BOOKS, BOOK_ADDED } from "../queries";
+import { ALL_BOOKS } from "../graphql/queries/allBooks.js";
+import { BOOK_ADDED } from "../graphql/subscriptions/bookAdded.js";
 import { useLazyQuery, useQuery, useSubscription } from '@apollo/client'
 
 const Books = (props) => {

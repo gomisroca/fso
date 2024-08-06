@@ -1,4 +1,4 @@
-import { ALL_AUTHORS } from "../queries"
+import { ALL_AUTHORS } from "../graphql/queries/allAuthors.js"
 import { useQuery } from '@apollo/client'
 import AuthorForm from "./AuthorForm"
 

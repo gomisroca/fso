@@ -5,7 +5,7 @@ import NewBook from "./components/NewBook";
 import LoginForm from "./components/LoginForm";
 import { useApolloClient, useSubscription } from "@apollo/client";
 import Recommended from "./components/Recommended";
-import { BOOK_ADDED } from "./queries";
+import { BOOK_ADDED } from "./graphql/subscriptions/bookAdded.js";
 
 const Notify = ({errorMessage}) => {
   if (!errorMessage) {

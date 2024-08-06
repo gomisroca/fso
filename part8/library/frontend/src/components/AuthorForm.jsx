@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useMutation } from '@apollo/client'
-import { EDIT_AUTHOR } from '../mutations'
 import Select from 'react-select';
+import { EDIT_AUTHOR } from '../graphql/mutations/editAuthor.js'
 
 const AuthorForm = ({ authors }) => {
   const select_options = authors.map(a => ({ value: a.name, label: a.name }))

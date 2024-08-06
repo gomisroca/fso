@@ -19,6 +19,7 @@
     "graphql-subscriptions": "^2.0.0",
     "graphql-ws": "^5.16.0",
     "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
     "mongoose": "^8.5.2",
     "mongoose-unique-validator": "^5.0.1",
     "uuid": "^10.0.0",

@@ -1,64 +1,13 @@
-const typeDefs = `
-  type User {
-    username: String!
-    favoriteGenre: String!
-    id: ID!
-  }
+const { merge } = require('lodash');
+const { makeExecutableSchema } = require('@graphql-tools/schema');
+const { typeDefs: Author, resolvers: authorResolvers } = require('./schemas/author.js');
+const { typeDefs: Book, resolvers: bookResolvers } = require('./schemas/book.js');
+const { typeDefs: User, resolvers: userResolvers } = require('./schemas/user.js');
+const { typeDefs: Query} = require('./schemas/query.js');
+const { typeDefs: Mutation } = require('./schemas/mutation.js');
+const { typeDefs: Subscription } = require('./schemas/subscription.js');
 
-  type Token {
-    value: String!
-  }
-
-  type Book {
-    title: String!
-    published: Int!
-    author: Author!
-    genres: [String!]!
-    id: ID!
-  }
-  
-  type Author {
-    name: String!
-    born: Int
-    books: [Book!]!
-    id: ID!
-  }
-
-  type Mutation {
-    addBook(
-      title: String!
-      published: Int!
-      author: String!
-      genres: [String!]!
-    ): Book
-
-    editAuthor(
-      name: String!
-      born: Int!
-    ): Author
-
-    createUser(
-      username: String!
-      favoriteGenre: String!
-    ): User
-
-    login(
-      username: String!
-      password: String!
-    ): Token
-  }
-
-  type Query {
-    bookCount: Int!
-    authorCount: Int!
-    allBooks(author: String, genre: String): [Book!]!
-    allAuthors: [Author!]!
-    me: User
-  }
-
-  type Subscription {
-    newBook: Book!
-  }
-`
-
-module.exports = typeDefs
+module.exports = makeExecutableSchema({
+  typeDefs: [ Query, Mutation, Subscription, Author, Book, User ],
+  resolvers: merge(userResolvers, bookResolvers, authorResolvers),
+})
