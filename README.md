@@ -42,3 +42,9 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * Webpack
 * Class components, Miscellaneous
 * Exercises: extending the bloglist
+## [Part 8 - GraphQL ](part8/)  
+* GraphQL-server
+* React and GraphQL
+* Database and user administration
+* Login and updating the cache
+* Fragments and subscriptions
