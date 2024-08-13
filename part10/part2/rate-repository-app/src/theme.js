@@ -14,11 +14,14 @@ const theme = {
     subheading: 16,
     heading: 20,
   },
-  fonts: Platform.select({
-    ios: 'Arial',
-    android: 'Roboto',
-    default: 'System',
-  }),
+  fonts: {
+    main: 
+      Platform.select({
+      ios: 'Arial',
+      android: 'Roboto',
+      default: 'System',
+    })
+  },
   fontWeights: {
     normal: '400',
     bold: '700',
