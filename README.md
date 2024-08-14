@@ -66,5 +66,5 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 ## [Part 10 - React Native ](part10/)  
 * [Introduction to React Native](part10/part1)
 * [React Native basics](part10/part2)
-* Communicating with server
+* [Communicating with server](part10/part3)
 * Testing and extending our application
