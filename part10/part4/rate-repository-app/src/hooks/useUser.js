@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { GET_USER_INFO } from '../graphql/queries';
 import { useQuery } from '@apollo/client';
 
@@ -8,14 +7,6 @@ const useUser = (includeReviews = false) => {
     fetchPolicy: 'cache-and-network'
   });
 
-  const [userData, setUserData] = useState(null);
-
-  useEffect(() => {
-    if (data) {
-      setUserData(data.me);
-    }
-  }, [data]);
-
   if (loading) {
     return { loading: true };
   }
@@ -24,7 +15,7 @@ const useUser = (includeReviews = false) => {
     return null;
   }
 
-  return { userData, refetch };
+  return { userData: data?.me, refetch };
 };
 
 export default useUser;
