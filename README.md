@@ -68,3 +68,10 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * [React Native basics](part10/part2)
 * [Communicating with server](part10/part3)
 * [Testing and extending our application](part10/part4)
+  
+## [Part 11 - CI/CD ](part11/)  
+* Introduction to CI/CD
+* Getting started with GitHub Actions
+* Deployment
+* Keeping green
+* Expanding Further
