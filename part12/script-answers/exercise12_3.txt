@@ -1,0 +1,5 @@
+Script started on 2024-08-20 11:05:01+02:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="203" LINES="17"] 
+ # nano index.js 
+[?2004h [?1049h [22;0;0t [1;17r (B [m [4l [?7h [39;49m [?1h = [?1h = [?25l [39;49m (B [m [H [2J [15;95H (B [0;7m[ Reading... ] (B [m [15;94H (B [0;7m[ Read 0 lines ] (B [m [H (B [0;7m  GNU nano 7.2  [8
+X X
+Script done on 2024-08-20 11:05:37+02:00 [COMMAND_EXIT_CODE="0"] 

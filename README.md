@@ -75,3 +75,8 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * Deployment
 * Keeping green
 * Expanding Further
+* 
+## [Part 12 - Containers ](part12/)  
+* Introduction to Containers
+* Building and configuring environments
+* Basics of Orchestration

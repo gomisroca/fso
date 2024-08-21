@@ -1,0 +1,70 @@
+Script started on 2024-08-20 17:45:27+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="116" LINES="10"]
+# mongosh -u root -p example
+^[]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000^GCurrent Mongosh Log ID:66c4d6455d167331c25e739b
+Connecting to:^[[1m^[[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0^[[0m
+Using MongoDB:7.0.12
+^[[1m^[[33mUsing Mongosh^[[0m:2.3.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+^[[1G^[[0J ^[[1G^[[1m^[[33m------^[[0m
+^[[1m^[[33mThe server generated these startup warnings when booting^[[0m
+2024-08-20T17:44:42.660+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+2024-08-20T17:44:44.336+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never' in this binary version
+2024-08-20T17:44:44.336+00:00: vm.max_map_count is too low
+^[[1m^[[33m------^[[0m
+
+^[[1G^[[0Jtest> ^[[7Gshow dbs^M
+^[[1madmin^[[0m100.00 KiB
+^[[1mconfig^[[0m12.00 KiB
+^[[1mlocal^[[0m          72.00 KiB
+^[[1mthe_database^[[0m   40.00 KiB
+^[[1G^[[0Jtest> ^[[7Guse the_b^[[1G^[[0Jtest> use the_^[[15Gdatabase^M
+switched to db the_database
+^[[1G^[[0Jthe_database> ^[[15Gshow collections^M
+^[[1mtodos^[[0m
+^[[1G^[[0Jthe_database> ^[[15Gdb.todos.find({})^M
+[
+  {
+    _id: ObjectId(^[[32m'66c4d608293cf13b205e739c'^[[39m),
+    text: ^[[32m'Write code'^[[39m,
+    done: ^[[33mtrue^[[39m
+  },
+  {
+    _id: ObjectId(^[[32m'66c4d608293cf13b205e739d'^[[39m),
+    text: ^[[32m'Learn about containers'^[[39m,
+    done: ^[[33mfalse^[[39m
+  }
+]
+^[[1G^[[0Jthe_database> ^[[15Gdb.todos.insertOne({ text^H^H^H^H^[[33mtext^[[39m: ^[[32m'^[[39m^[[1G^[[0Jthe_database> db.todos.insertOne({ ^[[33mtext^[[39m: ^[[42GIncrease the number o^H^[[36mof^[[39m tools i^H^[[36min^[[39>
+{
+  acknowledged: ^[[33mtrue^[[39m,
+  insertedId: ObjectId(^[[32m'66c4d69c5d167331c25e739c'^[[39m)
+}
+^[[1G^[[0Jthe_database> ^[[15G^[[1G^[[0Jthe_database> db.todos.insertOne({ ^[[33mtext^[[39m: ^[[32m'Increase the number of tools in my tool belt'^[[39m, ^[[33mdone^[[39m: ^[[33mfalse^[[39m })^[[104G^[[1G^[[0Jthe_database> d>
+[
+  {
+    _id: ObjectId(^[[32m'66c4d608293cf13b205e739c'^[[39m),
+    text: ^[[32m'Write code'^[[39m,
+    done: ^[[33mtrue^[[39m
+  },
+  {
+    _id: ObjectId(^[[32m'66c4d608293cf13b205e739d'^[[39m),
+    text: ^[[32m'Learn about containers'^[[39m,
+    done: ^[[33mfalse^[[39m
+  },
+  {
+    _id: ObjectId(^[[32m'66c4d69c5d167331c25e739c'^[[39m),
+    text: ^[[32m'Increase the number of tools in my tool belt'^[[39m,
+    done: ^[[33mfalse^[[39m
+  }
+]
+^[[1G^[[0Jthe_database> ^[[15Gexit^M
+# ^C
+# exit
+
+Script done on 2024-08-20 17:47:29+00:00 [COMMAND_EXIT_CODE="130"]
