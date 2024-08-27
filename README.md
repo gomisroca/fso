@@ -80,3 +80,8 @@ This is my collection of exercises for the [Full Stack Open](https://fullstackop
 * Introduction to Containers
 * Building and configuring environments
 * Basics of Orchestration
+
+## [Part 13 - Using relational databases ](part13/)  
+* Using relational databases with Sequelize
+* Join tables and queries
+* Migrations, many-to-many relationships
